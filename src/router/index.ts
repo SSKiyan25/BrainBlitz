@@ -3,7 +3,7 @@ import LaunchPage from '../views/LaunchPageView.vue'
 import Login from '../views/LoginView.vue'
 import SignUp from '../views/SignUpView.vue'
 import Dashboard from '../views/DashboardView.vue'
-import FlashCard from '../views/FlashCardView.vue'
+import FlashCards from '../components/Forms/FlashCard.vue'
 
 const routes: RouteRecordRaw[] = [
   {
@@ -29,7 +29,7 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/flashcard',
     name: 'FlashCard',
-    component: FlashCard,
+    component: FlashCards,
   },
   // Add more routes here
 ];

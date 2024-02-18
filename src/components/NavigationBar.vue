@@ -1,9 +1,9 @@
 <template>
-<nav class="bg-[#3F2E3E] dark:bg-gray-900 border-b-2 border-[#331D2C]">
+<nav class="bg-[#3F2E3E] dark:bg-gray-900 border-b-2 border-[#331D2C] top-0 w-full fixed height-[60px]">
     <div class="flex flex-wrap items-center justify-between max-w-screen md:mx-8 mx-auto  p-4 shadow-lg">
       <div class="flex flex-row">
           <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-              <img src="/2.png" class="h-8" alt="Flowbite Logo" />
+              <img src="/2.png" class="h-8" alt="Logo" />
               <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">BrainBlitz</span>
           </a>
           <div id="mega-menu-icons" class="items-center justify-between hidden w-full md:flex md:w-auto mx-8 md:order-1">

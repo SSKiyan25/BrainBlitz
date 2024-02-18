@@ -13,6 +13,13 @@ import {RouterView} from 'vue-router'
 </template>
 
 <style scoped>
+main{
+  padding-bottom:60px;
+}
+footer{
+  bottom:0;
+
+}
 .logo {
   height: 6em;
   padding: 1.5em;

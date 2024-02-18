@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col items-center justify-center h-screen pt-12 pb-24 box-border">
-    <div class="flex-auto rounded-lg shadow-2xl w-5/6">
+  <div class="flex flex-col items-center min-h-screen pt-24 pb-24 box-border">
+    <div class="flex-auto rounded-lg shadow-2xl w-5/6 overflow-auto">
       <div class="flex items-center justify-between px-8 py-8 mt-4 border-b-2">
         <h4 class="text-2xl font-bold dark:text-black">FlashCards</h4>
         <router-link to="/flashcard">
