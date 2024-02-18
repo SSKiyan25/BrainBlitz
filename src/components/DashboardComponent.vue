@@ -1,3 +1,5 @@
 <template>
-  <h2>Template</h2>
+  <div class="flow bg-[#EFE1D1] h-screen">
+    
+  </div>
 </template>
