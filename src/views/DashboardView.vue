@@ -6,7 +6,6 @@
   onMounted(() => {
     initFlowbite();
   })
-
 </script>
 
 <template>

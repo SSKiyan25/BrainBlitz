@@ -1,13 +1,14 @@
 <script setup lang="ts">
-  import UserCards from '../components/UserCardsComponent.vue'
+  import LaunchPage from '../components/LaunchPageComponent.vue'
   import { onMounted } from 'vue'
   import { initFlowbite } from 'flowbite'
 
   onMounted(() => {
     initFlowbite();
   })
+
 </script>
 
 <template>
-  <UserCards />
+  <LaunchPage />
 </template>

@@ -1,14 +1,14 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
-import Dashboard from '../views/DashboardView.vue'
+import LaunchPage from '../views/LaunchPageView.vue'
 import Login from '../views/LoginView.vue'
 import SignUp from '../views/SignUpView.vue'
-import UserCards from '../views/UserCardsView.vue'
+import Dashboard from '../views/DashboardView.vue'
 
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
-    name: 'Dashboard',
-    component: Dashboard,
+    name: 'LaunchPage',
+    component: LaunchPage,
   },
   {
     path: '/login',
@@ -21,9 +21,9 @@ const routes: RouteRecordRaw[] = [
     component: SignUp,
   },
   {
-    path: '/usercards',
-    name: 'UserCards',
-    component: UserCards,
+    path: '/dashboard',
+    name: 'Dashboard',
+    component: Dashboard,
   },
   // Add more routes here
 ];
