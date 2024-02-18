@@ -1,6 +1,6 @@
 <template>
-  <div class="flex items-center justify-center w-screen mt-24 mb-12">
-    <div class=" items-center w-1/4">
+  <div class="flex items-center justify-center w-screen mt-24 mb-12 px-4 sm:px-0">
+    <div class="items-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
       <h1 class="text-3xl font-bold mb-8 text-center">Login</h1>
         <form class="mx-auto">
           <div class="mb-5">
