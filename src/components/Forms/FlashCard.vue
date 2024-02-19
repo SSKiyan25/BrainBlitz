@@ -7,11 +7,11 @@
       </div>
       <div class="w-full mt-4 mb-8 border-b-2 px-4">
           <label for="small-input" class="block mb-2 text-lg font-medium text-gray-900 dark:text-white">Title</label>
-          <input type="text" class="block w-1/2 p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+          <input v-model="title" type="text" class="block w-1/2 p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
           <label for="small-input" class="block mb-2 text-lg font-medium text-gray-900 dark:text-white mt-4">Category</label>
-          <input type="text" class="block w-1/2 p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+          <input v-model="category" type="text" class="block w-1/2 p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
           <label for="small-input" class="block mb-2 text-lg font-medium text-gray-900 dark:text-white mt-8">Description</label>
-          <textarea id="message" rows="6" class="block p-2.5 w-3/4 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mb-8" placeholder="..."></textarea>
+          <textarea v-model="description" id="message" rows="6" class="block p-2.5 w-3/4 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mb-8" placeholder="..."></textarea>
       </div>
       <div v-for="(question, questionIndex) in questions" :key="questionIndex">
         <div class="w-3/4 px-8 py-4">
@@ -53,6 +53,10 @@
 <script setup lang="ts">
   import { onMounted, ref } from 'vue'
   import { initFlowbite } from 'flowbite'
+
+  const title = ref('');
+  const category = ref('');
+  const description = ref('');
 
   onMounted(() => {
     initFlowbite();

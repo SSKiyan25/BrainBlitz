@@ -1,9 +1,3 @@
-<template>
-  <div class="">
-    
-  </div>
-</template>
-
 <script setup lang="ts">
   import { onMounted } from 'vue'
   import { initFlowbite } from 'flowbite'
